@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple emoji and python snake browser game" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Python Snake Game</title>
+  </head>
+  <body>
+    <h1>Python Snake Game</h1>
+    <main>
+      <div id="game"></div>
+      <div>
+        <div class="settings">
+          <div class="high-score">
+            <div>High score</div>
+            <div>0</div>
+          </div>
+        </div>
+        <div class="settings">
+          <h2>Settings</h2>
+          <div class="tab">
+            <div class="selector">
+              <label for="tileset">Tileset</label>
+              <select name="tileset" id="tileset">
+                <option value="beard">Lemoji beard</option>
+                <option value="snake">Python snake</option>
+              </select>
+            </div>
+            <div>
+              <img id="preview-snake" src="./snek_previews/beard.svg" alt="Snek beard preview">
+            </div>
+          </div>
+          <div class="tab">
+            <div class="selector">
+              <label for="theme">Theme</label>
+              <select name="theme" id="theme">
+                  <option value="discord-dark">Discord dark</option>
+                  <option value="discord-light">Discord light</option>
+              </select>
+            </div>
+            <div class="color-preview">
+              <div id="color-preview-dark-4"></div>
+              <div id="color-preview-dark-3"></div>
+              <div id="color-preview-dark-2"></div>
+              <div id="color-preview-dark-1"></div>
+              <div id="color-preview-light-1"></div>
+              <div id="color-preview-light-2"></div>
+              <div id="color-preview-light-3"></div>
+              <div id="color-preview-light-4"></div>
+              <div id="color-preview-blurple-weak"></div>
+              <div id="color-preview-blurple-strong"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
