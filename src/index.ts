@@ -16,7 +16,7 @@ const getConfig = () => {
     const size: number = root.clientHeight/height;
     return {
         getHeight: () => height,
-        getWdith: () => width,
+        getWidth: () => width,
         getSize: () => size,
         getRoot: () => root
     }
@@ -25,7 +25,7 @@ const getConfig = () => {
 const getGameState = () => {
     const config = getConfig();
     const height = config.getHeight();
-    const width = config.getWdith()
+    const width = config.getWidth()
     const grid: number[][] = new Array(height).fill(0)
         .map(() => new Array(width).fill(0));
 
