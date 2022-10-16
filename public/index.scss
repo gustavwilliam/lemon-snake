@@ -134,3 +134,13 @@ main {
         max-height: 80px;
     }
 }
+
+#game {
+    border: 1px solid var(--color-dark-1);
+    border-radius: 20px;
+    overflow: hidden;
+
+    canvas {
+        border-radius: 20px;
+    }
+}
