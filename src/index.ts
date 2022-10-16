@@ -12,8 +12,8 @@ const colorLight = getCssVariable.bind(null, '--color-dark-1')
 const getConfig = () => {
     const root = document.getElementById('game')!;
     const height: number = 12;
-    const width: number = 20;
     const size: number = root.clientHeight/height;
+    const width: number = Math.floor(root.clientWidth/size);
     return {
         getHeight: () => height,
         getWidth: () => width,
@@ -57,11 +57,12 @@ const drawGridBox = (grid: number[][], ctx: CanvasRenderingContext2D) => {
     const config = getConfig();
     const box = getBox(ctx, config.getSize());
     const dark = colorDark(), light = colorLight();
+    const size = config.getSize();
 
     grid.forEach((row: number[], i: number) => {
         row.forEach((value: number, j: number) => {
             ctx.fillStyle = (i+j)%2 ? light : dark;
-            box.drawBox(i*10, j*10);
+            box.drawBox(i*size, j*size);
         })
     })
 }
