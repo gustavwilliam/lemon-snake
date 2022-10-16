@@ -136,11 +136,12 @@ main {
   background-color: var(--color-blurple-strong);
 }
 
-#game {
-  border: 1px solid var(--color-dark-1);
-  border-radius: 20px;
-  overflow: hidden;
+.header {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-#game canvas {
-  border-radius: 20px;
-}/*# sourceMappingURL=index.css.map */
+.header img {
+  max-height: 80px;
+}
+
+/*# sourceMappingURL=index.css.map */

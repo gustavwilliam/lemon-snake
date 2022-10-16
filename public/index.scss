@@ -125,12 +125,12 @@ main {
     #color-preview-blurple-strong { background-color: var(--color-blurple-strong); }
 }
 
-#game {
-    border: 1px solid var(--color-dark-1);
-    border-radius: 20px;
-    overflow: hidden;
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
 
-    canvas {
-        border-radius: 20px;
+
+    img {
+        max-height: 80px;
     }
 }
